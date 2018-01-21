@@ -1,3 +1,16 @@
 .hello {
   margin-top: 10px;
 }
+
+// See Symfony Docs: https://symfony.com/doc/current/frontend/encore/bootstrap.html#importing-bootstrap-sass
+
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+// set if you're also including font-awesome
+$fa-font-path: "~font-awesome/fonts";
+
+// the ~ allows you to reference things in node_modules
+@import '~bootstrap-sass/assets/stylesheets/bootstrap';
+
+// Import Font Awesome
+@import '~font-awesome/scss/font-awesome.scss';
