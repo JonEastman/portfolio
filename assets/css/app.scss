@@ -1,8 +1,9 @@
 body {
   font-family: 'Ubuntu', sans-serif !important;
+  position: relative;
 }
 
-.jumbotron {
+.jumbotron-main {
   margin-top: 0;
   background-image: url("../images/jon_portfolio.png");
   background-size: cover;
@@ -16,7 +17,34 @@ body {
 .jumbotron-text {
   color: #bbbbbb !important;
 }
-
+.about-me-img-box {
+  width: 90%;
+}
+.about-me-img {
+  max-width: 100%;
+}
+.jumbotron-skyline {
+  margin-top: 0;
+  margin-bottom: 0 !important;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../images/marina_skyline.png");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.jumbotron-skyline-overlay-text {
+  margin-top: 100px;
+}
+.signature-text {
+  color: #bbbbbb !important;
+  font-family: 'Arizonia', cursive;
+}
+.social-icon {
+  color: #bbbbbb !important;
+  margin-right: 20px;
+}
+.social-icon:hover {
+  color: #11d45a !important;
+  cursor: pointer;
+}
 .navbar-inverse {
   background-color: transparent !important;
   border: none !important;
@@ -43,7 +71,9 @@ body {
 .marginTop20 {
   margin-top: 20px;
 }
-
+.marginTop50 {
+  margin-top: 50px;
+}
 
 // See Symfony Docs: https://symfony.com/doc/current/frontend/encore/bootstrap.html#importing-bootstrap-sass
 

@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}Jonathan Eastman{% endblock %}
+
 {% block body %}
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
+    <div class="jumbotron jumbotron-main">
         <div class="container">
             <div class="row">
                 <div class="col-sm-5">
@@ -18,12 +20,48 @@
     </div>
 
     <div class="container">
-        <div class="row">
+        <div id="scroll-about" class="row">
+            <div class="col-xs-12">
+                <h1 class="text-center">About Me</h1>
+                <div class="row marginTop50">
+                    <div class="col-sm-4">
+                        <div class="about-me-img-box">
+                            <img src="{{ asset('build/images/sailing.png') }}" alt="Picture of Me!" class="img-circle about-me-img">
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <p>
+                            Hey there! Thanks for stopping by, here's a little more about me.
+                            I currently live in Milwaukee, WI yup the city known for brewing beer.
+                            I enjoy trying new IPAs but by no means a beer snob.
+                            Milwaukee is located on the coast of Lake Michigan (one of the great lakes).
+                            During summer, when I'm not coding, you'll probably find me down by the lake front working on my boat or sailing.
+                        </p>
+                        <p class="marginTop20">
+                            I also enjoy traveling a lot! I recently found that staying in AirBnBs in foreign countries might be my new favorite thing.
+                            When it comes to taking on projects, I have a <b>"Who said it can't be done attitude"</b> (a saying my Grandfather says after we finish projects).
+                            My favorite projects are complex applications that make someone's job easier or creates a better customer experience.
+                        </p>
+                        <p class="marginTop20">
+                            I'm a firm believer in life long learning.  The tech industry is a perfect example of this.
+                            If you don't stay current you get left behind.
+                            One area I am striving to constantly improve is my front end design.
+                            I tend to be a pragmatic thinker but design is so important.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="scroll-skills" class="row">
             <div class="col-xs-12 text-center">
                 <h1>Skills</h1>
                 <p>The following are all frameworks, projects, libraries, APIs, systems, technologies, etc. that I have successfully used in projects.</p>
             </div>
         </div>
+        {# TODO: MySQL, Postgres, Github #}
+
         <div class="row marginTop20">
             <div class="col-xs-6 col-sm-2">
                 <div class="technology-logo-box">
@@ -139,11 +177,29 @@
                 </div>
             </div>
         </div>
-        <hr>
-
-        <footer>
-            <p>&copy; 2016 Company, Inc.</p>
-        </footer>
     </div> <!-- /container -->
+    <div class="jumbotron jumbotron-skyline">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="jumbotron-skyline-overlay-text text-center">
+
+                        <p class="marginTop20">
+                            <span class="social-icon"><i class="fa fa-2x fa-github"></i></span>
+                            <span class="social-icon"><i class="fa fa-2x fa-twitter"></i></span>
+                            <span class="social-icon"><i class="fa fa-2x fa-linkedin"></i></span>
+                            <span class="social-icon"><i class="fa fa-2x fa-instagram"></i></span>
+                        </p>
+                        <p class="jumbotron-text marginTop20">hello@jonathaneastman.com</p>
+                        <h1 class="signature-text">JE</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#<footer>#}
+        {#<p>&copy; 2018 Jonathan Eastman</p>#}
+    {#</footer>#}
+
 
 {% endblock %}
