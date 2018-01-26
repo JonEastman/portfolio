@@ -8,8 +8,8 @@
             <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
         {% endblock %}
     </head>
-    <body data-spy="scroll">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
+    <body>
+        <nav id="js-nav-background" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -21,15 +21,12 @@
                 </div>
                 <div id="navbar" class="nav navbar-nav navbar-right navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#" data-target="#scroll-about">About Me</a></li>
-                        <li class="active"><a href="#" data-target="#scroll-skills">Skills</a></li>
-                        <li class="active"><a href="#">Portfolio</a></li>
-                        <li class="active"><a href="#">Contact</a></li>
-                        {#<li class="active"><a href="#">Adventures</a></li>#}
-                        {#<li class="active"><a href="#">Sailing</a></li>#}
-                        {#<li class="active"><a href="#">Blog</a></li>#}
+                        <li class="active"><a href="#about">About Me</a></li>
+                        <li class="active"><a href="#skills">Skills</a></li>
+                        <li class="active"><a href="#portfolio">Portfolio</a></li>
+                        {#<li class="active"><a href="#">Contact</a></li>#}
                     </ul>
-                </div><!--/.navbar-collapse -->
+                </div>
             </div>
         </nav>
         {% block body %}

@@ -49,6 +49,11 @@ body {
   background-color: transparent !important;
   border: none !important;
 }
+.navbar-fixed-top.scrolled {
+  background-color: #3c3c3c !important;
+  transition: background-color 200ms linear;
+  opacity: 0.8;
+}
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
   background-color: transparent !important;
   padding-bottom: 0 !important;
@@ -57,7 +62,9 @@ body {
 .navbar-inverse .navbar-nav > .active > a:hover {
   border-bottom: 2px solid #11d45a;
 }
-
+.section-padding {
+  padding-top: 50px;
+}
 .technology-logo-box {
   width: 90%;
   margin-bottom: 20px;
@@ -67,12 +74,22 @@ body {
   width: 100%;
   height: auto;
 }
-
+.portfolio-box {
+  width: 100%;
+  text-align: center;
+}
+.portfolio-image {
+  width: 100%;
+  height: auto;
+}
 .marginTop20 {
   margin-top: 20px;
 }
 .marginTop50 {
   margin-top: 50px;
+}
+.marginBottom100 {
+  margin-bottom: 100px;
 }
 
 // See Symfony Docs: https://symfony.com/doc/current/frontend/encore/bootstrap.html#importing-bootstrap-sass
